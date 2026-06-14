@@ -11,10 +11,10 @@ extension) in the same folder.
 
 ## Features
 
-- **Auto-discovers numbered files.** Scans the current directory for 1.<ext>,
+- **Auto discovers numbered files.** Scans the current directory for 1.<ext>,
   2.<ext> sorting them ascending, and warns about gaps.
-- **Per-clip trim ranges** through a simple interactive prompt.
-- **Hardware encoder auto-selection** with a real smoke test (not just feature
+- **Per clip trim ranges** through a simple interactive prompt.
+- **Hardware encoder auto selection** with a real smoke test (not just feature
   detection):
   - NVIDIA NVENC
   - Intel Quick Sync (QSV)
@@ -23,7 +23,7 @@ extension) in the same folder.
 - **Resolution selector**: 1080p, 1440p, 4K, or keep original.
 - **Preserves source bitrate** by probing each input with ffprobe and matching
   the output bitrate.
-- **Cross-platform**: Linux x86_64, Linux aarch64, Windows x86_64, Windows
+- **Cross platform compatibily**: Linux x86_64, Linux aarch64, Windows x86_64, Windows
   arm64.
 - **Single file**, no pip install, no requirements.txt.
 
@@ -79,7 +79,7 @@ hardware acceleration:
 
 The tool runs a 1 frame test encode through each candidate before picking it,
 so misconfigured GPUs get skipped automatically, you'll never wait 5 minutes
-to find out NVENC didn't actually work :3.
+to find out NVENC didn't actually work :3
 
 ---
 
